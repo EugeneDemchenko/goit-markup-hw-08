@@ -1,0 +1,82 @@
+.hero {
+    background-color: $secondary-bg-color;
+    text-align: center;
+
+    background-image: linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4));
+    background-repeat: no-repeat;
+    background-position: center;
+
+@media screen and (max-width:767px) {
+    background-image: url(../images/mobilehero.jpg);
+    @media (min-resolution: 2dppx) {
+            background-image: url(../images/mobilehero2x.jpg);       
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    background-image: url(../images/tablethero.jpg);
+    @media (min-resolution: 2dppx) {
+            background-image: url(../images/tablethero2x.jpg);
+    }
+}
+@media screen and (min-width:1200px) {
+    background-image: url(../images/hero.jpg);
+    @media (min-resolution: 2dppx) {
+            background-image: url(../images/hero2x.jpg);
+    }
+}
+
+
+    @media screen and (max-width:1199px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-size: cover;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+}
+
+.hero__container {
+    padding-left: 15px;
+    padding-right: 15px;
+@media screen and (max-width:767px) {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+              @media screen and (min-width:768px) and (max-width:1199px) {
+               max-width: 768px;
+               margin: 0 auto;
+           }
+}
+
+.hero__title {
+   
+    margin: 0px auto 30px auto;
+    color: $light-text-color;
+    font-weight: 900;    
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    @media screen and (max-width: 767px) {
+        max-width: 360px;
+        font-size: 26px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        width: 360px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 696px; 
+        font-size: 44px;
+    }
+}
+

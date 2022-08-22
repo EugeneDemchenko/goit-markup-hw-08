@@ -1,0 +1,40 @@
+.portfolio {
+    @media screen and (max-width:1199px) {
+        padding: 60px 0;
+    }
+    @media screen and (min-width:1200px) {
+    padding-top: 89px;
+    padding-bottom: 99px;        
+    }
+}
+
+.portfolio__container {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @media screen and (max-width:767px) {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width:1200px) {
+    width: 1200px;          
+    }
+}
+
+.portfolio__title--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}

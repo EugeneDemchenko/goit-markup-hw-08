@@ -1,0 +1,123 @@
+.skill {
+
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
+}
+
+.skill__container {
+    @media screen and (max-width:767px) {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    
+    @media screen and (max-width:1199px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
+
+.skill__title--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.skill__list {
+    padding: 0;
+    list-style: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:0;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.skill__item {
+    padding: 0;
+    text-align: left;
+    &:last-of-type {margin-right: 0;}
+    &::before {display: block;
+        content: "";
+        height: 120px;
+        background-color: $extra-bg-color;
+        margin-bottom: 30px;
+        background-position: center;
+        background-repeat: no-repeat;}
+
+    &--antenna::before {background-image: url(../images/antenna.svg);}
+    &--clock::before {background-image: url(../images/clock.svg);}
+    &--diagram::before {background-image: url(../images/diagram.svg);}
+    &--astronaut::before {background-image: url(../images/astronaut.svg);}
+
+        @media screen and (max-width: 767px) {
+            &:not(:last-child) {margin-bottom: 30px;}
+        }
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 354px;
+            &:nth-child(n+3) {margin-top: 30px;}
+        }
+        @media screen and (min-width:1200px) {
+            display: inline-block;
+            width: 270px;
+            margin: 0 30px 0 0;
+        }
+}
+
+
+.skill__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-text-color;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
+}
+
+.skill__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
